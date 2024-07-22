@@ -12,6 +12,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
    const fetchData = async (endpoint) => {
        // Código da função
    };
+    ```
 
 2. **Template Literals (Template Strings)**
 
@@ -20,7 +21,8 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
    **Exemplo:**
 
    ```javascript
-    const url = `${baseURL}/${endpoint}`;
+   const url = `${baseURL}/${endpoint}`;
+   ```
 
 3. **Destructuring Assignment**
 
@@ -30,6 +32,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
 
     ```javascript
     const { id, name } = raca;
+   ```
 
 4. **Async/Await**
 
@@ -42,6 +45,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
         const response = await fetch(`${baseURL}/${endpoint}`);
         return response.json();
     };
+   ```
 
 5. **Default Parameters**
 
@@ -53,6 +57,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
    const fetchData = async (endpoint = 'breeds') => {
     // Código da função
     };
+   ```
 
 6. **Spread Operator (...)**
 
@@ -62,6 +67,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
 
    ```javascript
    const todosRacas = [...racas];
+   ```
 
 7. **Object Property Shorthand**
 
@@ -71,6 +77,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
 
    ```javascript
    const racaItem = { id, name };
+   ```
 
 8. **Enhanced Object Literals**
 
@@ -86,6 +93,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
           console.log(this.name);
         }
     };
+   ```
 
 9. **const e let**
 
@@ -96,6 +104,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
     ```javascript
     const baseURL = "https://api.thedogapi.com/v1";
     let todasRacas = [];
+   ```
 
 10. **Optional Chaining (?.)**
 
@@ -105,6 +114,7 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
 
     ```javascript
     const imageURL = raca.reference_image_id?.url || 'https://via.placeholder.com/600';
+    ```
 
 11. **Nullish Coalescing Operator (??)**
 
@@ -114,3 +124,4 @@ Lista das features do ES6+ utilizadas no código, com exemplos e descrições.
 
     ```javascript
     const racaDescription = raca.temperament ?? 'Não disponível';
+    ```
