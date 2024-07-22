@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, #003366, #002244);
+    border-bottom: 4px solid #001933;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+aside .bg-gray-200 {
+    background-color: #e2e8f0;
+}
+
+#racaListContainer {
+    padding: 1rem;
+    position: relative;
+}
+
+#racaList {
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 1rem;
+    padding-right: 1rem;
+    background-color: #f8fafc;
+    transition: padding-right 0.3s ease, overflow-y 0.3s ease-in-out;
+}
+
+#racaListContainer:hover #racaList {
+    padding-right: 1.5rem;
+}
+
+#racaList::-webkit-scrollbar {
+    width: 0px;
+}
+
+#racaListContainer:hover #racaList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#racaList::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 4px;
+}
+
+#loading {
+    display: none;
+}
